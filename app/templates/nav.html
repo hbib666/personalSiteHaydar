@@ -1,21 +1,27 @@
 <!doctype html>
 <html>
     <head>
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/toolbar.css') }}">
       {% block head %}
       {% endblock %}
 
     </head>
 
     <body>
-      <div id="toolbar">
-        <a href="/index"> home </a>
-        <a href="/about"> about </a>
-        <a href="/illustrate"> illustrations </a>
-        <a href="/photoBooth"> photo booth </a>
-        <a href="/projects"> projects </a>
-        <a href="/resume"> resume </a>
-      </div>
+      <div id="container">
+        <div class="toolbar">
+          <ul>
+            <li> <a href="/resume"> resume </a> </li>
+            <li> <a href="/projects"> projects </a> </li>
+            <li> <a href="/photoBooth"> photo booth </a> </li>
+            <li> <a href="/illustrate"> illustrations </a> </li>
+            <li> <a href="/about"> about </a> </li>
+            <li> <a href="/index"> home </a> </li>
+          </ul>
+        </div>
 
+        <a href="/index" id="nameTopLeft"> Haydar Amin </a>
+      </div>
       {% block body %}
       {% endblock %}
 

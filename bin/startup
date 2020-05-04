@@ -1,0 +1,4 @@
+echo "set flask app to haydarsite.py"
+FLASK_APP=haydarSite.py
+echo "sourced venv"
+source venv/bin/activate
